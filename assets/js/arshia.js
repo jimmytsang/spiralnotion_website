@@ -227,11 +227,11 @@ function portfolioPopup() {
     if (('.portfolio-items').length > 0) {
         $('.portfolio-items').each(function() {
             $(this).magnificPopup({
-                delegate: '.js-zoom-gallery'
-                // type: 'image',
-                // gallery: {
-                //     enabled:true
-                // }
+                delegate: '.js-zoom-gallery',
+                gallery: {
+                    enabled: true,
+                    preload: [0,2]
+                }
             });
         });
     }
